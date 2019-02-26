@@ -1,4 +1,64 @@
 Jenkins Labs
+Day2 
+Lab 7 - Maven 
+	Create new Project(https://github.com/vaishalitapaswi/demo2maven)
+	Maven Project 
+		-> Maven target - clean install package
+		
+
+Lab 6 - Security Settings
+	Grant readonly access
+		Global Security -> Authorization
+		
+	Create Users
+		user1,user2,user3
+	install plugin - Matrix Authorization Strategy
+	install plugin - Role Based Role-based Authorization Strategy
+	
+	
+
+
+Lab 5 - two projects 
+	1. Compilation
+	2. Running
+	Project1 - Similar to DemoProject2 (GitHub)
+		-> only step here compilation
+	Project2 - 
+		Build after other projects are built 
+				Project1
+		java HelloWorld
+	
+	1. Observe error message
+	2. Create Build Steps
+		copy HelloWorld.class ... to project2workspace
+	-------------------------------
+	Install Copy Artifact 
+		
+Lab 4 - 
+	Configure (jdk, git, maven )
+	jdk - jdk home = C:\Program Files\Java\jdk1.8.0_05
+	git - git exe = C:\Program Files\Git\bin\git.exe
+	maven - maven home = C:\work\apache-maven-3.5.0
+
+	Project 2
+		Create Freestyle project - DemoProject2
+		select github project
+			https://github.com/vaishalitapaswi/mycode
+		source code git 
+		repourl = https://github.com/vaishalitapaswi/mycode
+	
+		Build Triggers
+			build periodically - 5 mins
+		GitHub pull request - every min
+		
+		
+
+
+Day 1
+Lab 3 - Plugins
+	List all the plugins
+	Install -> Suggested + git hub integration
+
 Lab 2 - 
 	Create a simple job
 	create  a folder (C:\mywork\demo1)
@@ -17,7 +77,7 @@ Lab 2 -
 					-> select after every minutes
 				->Build
 					build step->Windows batch
-						-> cd C:\mywork\demo1
+						->  cd C:\mywork\demo1
 							javac HelloWorld.java
 							java HelloWorld
 	Check project status
