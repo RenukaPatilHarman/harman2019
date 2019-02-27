@@ -1,5 +1,5 @@
 FROM openjdk:8-jre-slim
-COPY hello.jar .
+COPY HelloWorld-0.0.1-SNAPSHOT .
 EXPOSE 80
-CMD java -jar hello.jar
+CMD java -jar HelloWorld-0.0.1-SNAPSHOT.jar
 
